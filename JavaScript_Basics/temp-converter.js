@@ -4,6 +4,7 @@
 // formula T(°C) = (T(°F) - 32) × 5/9
 // formula T(K) = (T(°F) + 459.67)× 5/9
 
+
 let fahrenheit = 32;
 let celcius = (fahrenheit -32) * 5 / 9;
 let kelvin = (fahrenheit + 459.67) * 5 / 9;
@@ -13,6 +14,19 @@ console.log(`${fahrenheit} F, ${celcius} C, ${kelvin} K`) // 32 F, 0 C, 273.15 K
 let temp = 1
 let isFreezing = temp <= 1
 console.log(isFreezing)
+
+///function object method
+
+let convertFahrenheit = function (fahrenheit) {
+    return {
+        fahrenheitTemp: fahrenheit,
+        kelvinTemp: (fahrenheit + 459.67) * 5 / 9,
+        celciusTemp: (fahrenheit - 32) * 5 / 9
+    }
+}
+
+console.log(convertFahrenheit(32))
+
 
 //------------------------------------------------------------
 // Challenge
