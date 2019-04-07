@@ -14,6 +14,21 @@ const filters = {
     searchText: ''
 };
 
+// const user = {
+//     name: 'Andrew',
+//     age: 27
+// }
+
+// const userJSON = JSON.stringify(user)
+// console.log(user); 
+// console.log(userJSON); // result is string
+// localStorage.setItem('user', userJSON)
+
+const userJSON = localStorage.getItem('user') // result is string, we ll convert it to object
+console.log(userJSON)
+const user = JSON.parse(userJSON) // this converts string to back to object
+console.log(`${user.name} is ${user.age} years old.`)
+console.log(user)
 //LOCAL STORAGE
 
 //to store
@@ -28,6 +43,7 @@ const filters = {
 //to delete everything
 // localStorage.clear()
 //---------------
+
 
 
 
