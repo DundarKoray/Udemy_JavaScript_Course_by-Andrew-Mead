@@ -14,6 +14,23 @@ const filters = {
     searchText: ''
 };
 
+//LOCAL STORAGE
+
+//to store
+// localStorage.setItem('location', 'Helsinki')
+
+//to get
+// console.log(localStorage.getItem('location'))
+
+//to delete an item
+// localStorage.removeItem('location')
+
+//to delete everything
+// localStorage.clear()
+//---------------
+
+
+
 const renderNotes = function (notes, filters) {
     const filteredNotes = notes.filter(function (note){
         return note.title.toLowerCase().includes(filters.searchText.toLowerCase())
