@@ -1,5 +1,5 @@
 class PersonClass {
-    constructor(firstName, lastName, age, likes =[]){
+    constructor(firstName, lastName, age, likes){
         this.firstName = firstName
         this.lastName = lastName
         this.age = age
@@ -38,6 +38,12 @@ console.log(personKoray);
 
 
 
-class Test extends PersonClass {}
-const personAnna = new Test('Anna', 'Dündar', 32, ['Reading book'])
+class Test extends PersonClass {
+constructor(firstName, lastName, age, likes , nationality, favoriteColor){
+    super(firstName, lastName, age, likes)
+    this.nationality = nationality
+    this.favoriteColor = favoriteColor
+    }
+}
+const personAnna = new Test('Anna', 'Dündar', 32, ['Reading book', 'Swimming'], 'Finnish', 'Red')
 console.log(personAnna)
