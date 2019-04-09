@@ -34,3 +34,10 @@ console.log(personHari);
 
 personKoray.decreasePoint(2)
 console.log(personKoray);
+
+
+
+
+class Test extends PersonClass {}
+const personAnna = new Test('Anna', 'Dündar', 32, ['Reading book'])
+console.log(personAnna)
